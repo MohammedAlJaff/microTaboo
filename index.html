@@ -70,7 +70,7 @@
 > java -Xmx[a number]m -jar microTaboo.jar [name of folder A] [name of folder B] [name of folder R] [sequence length W] [number of mismatches k] d/i/a [number of cores] <br></br><br>
 
 For our example, we would write the following:<br>
->  java -Xmx6000mb -jar microTaboo.jar A B R 3 d 3;<br>
+>  java -Xmx6000m -jar microTaboo.jar A B R 3 d 3;<br>
 That is, we're specifying that we would like  microTaboo to give us the k-disjoint, where k=3, of the contents in A and B  and put the result files into the subfolder R.  In other words, we would like microTaboo to give us a file containing all sequences of length W in A that are at least 3 mismatches away from anything/any sequence in B.
 <br></br>
 There you go. You’ve hopefully now run microTaboo successfully. 
@@ -83,7 +83,8 @@ There you go. You’ve hopefully now run microTaboo successfully.
     <!-- FOOTER  -->
     <div id="footer_wrap" class="outer">
       <footer class="inner">
-        <p class="copyright">microTaboo "maintained" by <a href="https://github.com/nedaz">papa smurf</a></p>
+        <p class="copyright">microTaboo "maintained" by <a href="https://github.com/MohammedAlJaff">papa smurf</a> & 
+        <a href="https://github.com/eriqual">Ghostface Killah</a></p>
         <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
       </footer>
     </div>

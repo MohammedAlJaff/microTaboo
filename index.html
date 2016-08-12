@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Kraken : A universal genomic coordinate translator for comparative genomics">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>microTaboo</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/nedaz/kraken">View on GitHub</a>
+
+          <h1 id="project_title">microTaboo</h1>
+          <h2 id="project_tagline">a RAM-efficient tool for dry cleaning</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/nedaz/kraken/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/nedaz/kraken/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h3>
+<a id="methods" class="anchor" href="#methods" aria-hidden="true"><span class="octicon octicon-link"></span></a>Article</h3>
+
+<p><a href="http://www.biomedcentral.com/1471-2105/15/227?utm_source=dlvr.it&amp;utm_medium=tumblr">Place link here</a></p>
+<p>citation here</p>
+
+<hr>
+
+<h3>
+<a id="overview" class="anchor" href="#overview" aria-hidden="true"><span class="octicon octicon-link"></span></a>Overview</h3>
+
+<p>ipsum bullshit.</p>
+
+<hr>
+
+<h3>
+<a id="dinmamma" class="anchor" href="#dinmamma" aria-hidden="true"><span class="octicon octicon-link"></span></a>Key concepts</h3>
+<p><em><strong>k-mismatch problem:</em></strong> Given two sets A and B containing sequences of length W, find all sequences X in A such that X is more than k mismatches away from any sequence Y in B. The result one obtains is the so-called <em><strong>k-disjoint</strong></em> set of A and B. The complement of the result is the <em><strong>k-intersection</strong></em> of A and B, i.e the set of sequences in A that are at most k mismatches away from something in B.</p>
+
+<hr>
+
+<h3>
+<a id="getting-started" class="anchor" href="#getting-started" aria-hidden="true"><span class="octicon octicon-link"></span></a>How to use microTaboo</h3>
+
+<p>Below we give a step-by-step procedure of how to use microTaboo:<br><br>
+
+1. Create a folder/directory, you can name this folder/directory whatever you want as long as you know where it is. For the sake of example, we call our folder/directory F.<br><br>
+
+2. Download the microTaboo.jar file from the website and place it in the folder F.<br><br>
+
+3. Create three new (sub) folders/directories inside our main folder F. For simplicity and consistency, we call these new folders A, B and R. <br><br>
+
+4. Inside A, we should now put the FASTA files that we want our sequences to be found in. Inside the folder B we should place all FASTA files we do not want all sequences not to be inside in. As an added benefit microTaboo is able to deal with subfolders inside the folder B so if you would like to group your FASTA files, you can.<br><br>
+
+5. To run microTaboo, open a command line tool and navigate to the folder F and type the below formula:<br><br>
+
+> java -Xmx[a number]m -jar microTaboo.jar [name of folder A] [name of folder B] [name of folder R] [sequence length W] [number of mismatches k] d/i/a [number of cores] <br></br><br>
+
+For our example, we would write the following:<br>
+>  java -Xmx6000mb -jar microTaboo.jar A B R 3 d 3;<br>
+That is, we're specifying that we would like  microTaboo to give us the k-disjoint, where k=3, of the contents in A and B  and put the result files into the subfolder R.  In other words, we would like microTaboo to give us a file containing all sequences of length W in A that are at least 3 mismatches away from anything/any sequence in B.
+<br></br>
+There you go. You’ve hopefully now run microTaboo successfully. 
+</p>
+
+
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">microTaboo "maintained" by <a href="https://github.com/nedaz">papa smurf</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>

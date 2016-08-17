@@ -4,7 +4,6 @@
 #logotaboo {
   -webkit-filter: invert(100%);
   filter: invert(100%);
-  filter: grayscale(100%);
 }
 
 #har1, #har2, #har3, #har4, #har5, #har6 {

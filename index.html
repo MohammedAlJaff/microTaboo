@@ -129,11 +129,17 @@ Means finding all unique sequnces within 2 mismatches of length 20 bases while u
 <a id="getting-started" href="#getting-started"></a>
 1999-2016...</h3>
 <p>
-<script>function harambe(e) {
+<script>
+var h = false;
+var a = false;
+var r = false;
+
+
+function harambe(e) {
   var keynum = e.which;
   var keykey = String.fromCharCode(keynum);
   
-  if(keykey == "h") {
+  if(h == false && a == false && r == false) {
     document.getElementById("har1").style.display="inline";
     document.getElementById("har2").style.display="inline";
     document.getElementById("har3").style.display="inline";

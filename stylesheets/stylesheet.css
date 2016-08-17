@@ -1,6 +1,10 @@
 * {
   box-sizing: border-box; }
 
+#logo {
+  filter: invert(100%);
+}
+
 #har1, #har2, #har3, #har4, #har5, #har6 {
   display:none;
 }

@@ -133,6 +133,9 @@ Means finding all unique sequnces within 2 mismatches of length 20 bases while u
 var h = false;
 var a = false;
 var r = false;
+var m = false;
+var b = false;
+var e = false;
 
 function harambe(e) {
   var keynum = e.which;
@@ -145,6 +148,15 @@ function harambe(e) {
   }
   if(keykey== "r") {
     r = true;
+  }
+  if(keykey== "m") {
+    m = true;
+  }
+  if(keykey== "b") {
+    b = true;
+  }
+  if(keykey= "e") {
+    e = true;
   }
   
   if(h == true && a == true && r == true) {

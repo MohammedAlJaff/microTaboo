@@ -138,8 +138,17 @@ var r = false;
 function harambe(e) {
   var keynum = e.which;
   var keykey = String.fromCharCode(keynum);
+  if(keykey==h) {
+    h = true;
+  }
+  if(keykey==a) {
+    a = true;
+  }
+  if(keykey==r) {
+    r = true;
+  }
   
-  if(h == false && a == false && r == false) {
+  if(h == true && a == true && r == true) {
     document.getElementById("har1").style.display="inline";
     document.getElementById("har2").style.display="inline";
     document.getElementById("har3").style.display="inline";

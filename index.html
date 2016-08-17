@@ -129,6 +129,9 @@ When taking into account of unknown/uncertain bases (N), microTaboo follows the 
 Because of this, sequences containing many unknown bases, ie many N’s, will have a high mismatch count when compared to any other sequence.
 In the extreme case where we have a W nt sequence of only Ns; when compared to itself, the number of mismatches will be W. 
 If a microTaboo run is initiated with a mismatch parameter k < W, these sequences will be included in either the disjoint set or unique set.
+<br><br>
+Additionally, should unknown bases other than N's be present in an input FASTA file, microTaboo will convert them to N's and
+treat them as such.
 </p>
 <br><br>
 

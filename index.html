@@ -59,7 +59,7 @@ by a number of mismatches, then microTaboo should be your app of choice.</p>
 <a id="getting-started" href="#getting-started"></a>
 How to use microTaboo to solve you k-mismatch problem</h3>
 
-<p>Below we give a step-by-step procedure of how to use microTawdwaddadaboo:<br><br>
+<p>Below we give a step-by-step procedure of how to use microTaboo:<br><br>
 
 1. Create a folder/directory, you can name this folder/directory whatever you want as long as you know where it is. For the sake of example, we call our folder/directory F.<br><br>
 
@@ -96,7 +96,20 @@ How to use microTaboo to find sequences in a FASTA file that occur only once</h3
 <p>In this section, we'll show how microTaboo can be used to find all sequences of 
 length in a FASTA file, eg a whole genome sequence FASTA, that occur only once. In other words, here we'll try to 
 find only unique sequences in a FASTA file relative to its self. Below is a step by step instruction on how you could
-do this with microTaboo. 
+do this with microTaboo.<br></br>
+
+1. Create two separate folders (A and B), each one containing the FASTA file(s) for the same organism of interest. 
+Also create a third folder (R) where the result should be saved. We call these folders A, B and R for simplicity.
+<br><br>
+2. Run microTaboo from the command line by typing: <br>
+java -Xmx[#]m -jar microTaboo.jar path/A path/B path/R [#w] [#k] [d] [#cores] [m/s] <br>
+-Xmx[#]m determines the maximum memory microTaboo can allocate. <br>
+The path to A, B and R can be either relative or absolute.  <br>
+#w stands for word length and should be a multiple of 5 and atleast 10 (i.e 10, 15, 20 etc).<br>
+#k is the mismatch threshold, can be any number greater than or equal to 0. It is recommended to not use #k greater than 5.<br>
+d means disjoint and which corresponds to unique sequences. <br>
+#cores decides how many cores microTaboo should use, minimum is 1.<br>
+#m is a flag which is necessary when running a FASTA file against itself.
 
 
 

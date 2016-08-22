@@ -170,18 +170,41 @@ RAM allocation should be based on your largest FASTA file, give microTaboo 1GB p
 <table>
   <tr>
     <th>Parameter</th>
-    <th>Value Range</th>
     <th>Description</th>
+    <th>Example</th>
   </tr>
   <tr>
     <td>Xmx#m</td>
-    <td>2000 < # < MAX</td>
-    <td>Maximum RAM microTaboo can allocate</td>
+    <td>Maximum amount of RAM microTaboo can allocate in Megabytes. Minimum value should be 2000 for small FASTA files.</td>
+    <td>Xmx5000m</td>
   </tr>
   <tr>
     <td>W</td>
-    <td>10 < 100</td>
-    <td>Can be any multiple of 3,4 or 5 (N). Minimum value is 2*N. Recommended max value is 20*N</td>
+    <td>Word length or length of sequences to be found. Should always be a multiple of N=3, 4 or 5 with a minimum value of 2*N.
+    Recommended maximum value is 20*N</td>
+    <td>30</td>
+  </tr>
+  <tr>
+    <td>k</td>
+    <td>mismatch threshold. Minimum value is 0. Note that runtime may increase sharply with k.</td>
+    <td>3</td>
+  </tr>
+  <tr>
+    <td>d, i or a</td>
+    <td>d finds the disjoint<br>
+    i finds the intersect<br>
+    a finds both the intersect and the disjoint</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>c</td>
+    <td>number of cores microTaboo should use. Minimum value is 1.</td>
+    <td>5</td>
+  </tr>
+  <tr>
+    <td>s or m</td>
+    <td>Use m to find unique sequnences for one organism. Use s otherwise</td>
+    <td></td>
   </tr>
   
   

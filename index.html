@@ -127,7 +127,7 @@ Also create a third folder (R) where the result should be saved. We call these f
 java -Xmx[#]m -jar path/microTaboo.jar path/A path/B path/R [#w] [#k] [d] [#cores] [m] <br><br>
 -Xmx[#]m determines the maximum amount of memory (in MBs) microTaboo can use. <br>
 The path to microTaboo.jar, A, B and R can be either relative or absolute.  <br>
-#w stands for word length (in bases) and should be a multiple of 5 and atleast 10 (i.e 10, 15, 20 etc).<br>
+#w stands for word length (in bases) and should be a multiple of 3, 4 or 5 and atleast 6, 8 or 10. Using a mutliple of 5 is optimal<br>
 #k is the mismatch threshold, can be any number greater than or equal to 0. It is recommended to not use #k greater than 5.<br>
 d means disjoint and which corresponds to unique sequences. <br>
 #cores decides how many cores microTaboo should use, minimum is 1.<br>

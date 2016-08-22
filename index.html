@@ -82,10 +82,10 @@ How to use microTaboo to solve you k-mismatch problem</h3>
 
 5. To run microTaboo, open a command line tool and navigate to the folder F and type the below formula:<br><br>
 
-&gt; java -Xmx[a number]m -jar microTaboo.jar [name of folder A] [name of folder B] [name of folder R] [sequence length W] [number of mismatches k] d/i/a [number of cores] <br><br>
+&gt; java -Xmx[a number]m -jar microTaboo.jar [name of folder A] [name of folder B] [name of folder R] [sequence length W] [number of mismatches k] d/i/a [number of cores] s/m <br><br>
 
 For our example, we would write the following:<br>
-&gt;  java -Xmx6000m -jar microTaboo.jar A B R 20 3 d 3;<br>
+&gt;  java -Xmx6000m -jar microTaboo.jar A B R 20 3 d 3 s;<br>
 That is, we're specifying that we would like  microTaboo to give us the k-disjoint, where k=3, of the contents in A and B  and put the result files into the subfolder R.  
 In other words, we would like microTaboo to give us a file containing all sequences of length 20 in A that are at least 3 mismatches away from anything/any sequence in B.
 <br>

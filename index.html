@@ -51,16 +51,23 @@ by a number of mismatches, then microTaboo should be your app of choice.</p>
 <br><br>
 (set-theoretic formulation)
 <br><br>
-Given two sets A and B containing sequences of length W, find all sequences X in A such that X is more than k mismatches away from any sequence Y in B. The result one obtains is the so-called <em><strong>k-disjoint</strong></em> set of A and B. The complement of the result is the <em><strong>k-intersection</strong></em> of A and B, i.e the set of sequences in A that are at most k mismatches away from something in B.</p>
+Given two sets A and B containing sequences of length W, find all sequences X in A such that X is more than k mismatches away from any sequence Y in B. 
+The result one obtains is the so-called <em><strong>k-disjoint</strong></em> set of A and B. 
+The complement of the result is the <em><strong>k-intersection</strong></em> of A and B,
+i.e the set of sequences in A that are at most k mismatches away from something in B.
 <br><br>
 alternativly
 <br><br>
-Let A and B be two sets containing sequences of length W. The k-disjoint of A and B is the set containing all sequences X in A such that X is at least k edit distances away from Y for all Y in B. Finding the k-disjoint of A and B is called the k-disjoint problem.<br><br>
+Let A and B be two sets containing sequences of length W. 
+The k-disjoint of A and B is the set containing all sequences X in A such that X is at least k edit distances away from Y for all Y in B. 
+Finding the k-disjoint of A and B is called the k-disjoint problem.
 ("string & text" formulation)
 <br><br>
-Given two fixed positive integer value parameters W and k aswell as two strings P and T where P has length n and T has length m, the k-disjoint problem consists of finding all positions i (1=<i<=n) which have the property that a W length substring of P beginning at i is at least k edit distances away from any W long substring of T.
+Given two fixed positive integer value parameters W and k aswell as two strings P and T where P has length n and T has length m, 
+the k-disjoint problem consists of finding all positions i (1=<i<=n) which have the property that a W length substring of P 
+beginning at i is at least k edit distances away from any W long substring of T.
 <hr>
-
+</p>
 <h3>
 <a id="how-to-use-microtaboo-to-solve-you-k-mismatch-problem" class="anchor" href="#how-to-use-microtaboo-to-solve-you-k-mismatch-problem" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>
 <a id="getting-started" href="#getting-started"></a>
@@ -75,7 +82,7 @@ How to use microTaboo to solve you k-mismatch problem</h3>
 
 3. Create three new (sub) folders/directories inside our main folder F. For simplicity and consistency, we call these new folders A, B and R. <br><br>
 
-4. Inside A, we should now put the FASTA files that we want our sequences to be found in. Inside the folder B we should place all FASTA files we do not want all sequences not to be inside in. As an added benefit microTaboo is able to deal with subfolders inside the folder B so if you would like to group your FASTA files, you can.<br><br>
+4. Inside A, we should now put the FASTA files that we want our sequences to be found in. Inside the folder B we should place all FASTA files we do not want all sequences not to be inside in. As an added benefit microTaboo is able to deal with subfolders inside the folder B so if you would like to group your FASTA files, you can.
 
 5. To run microTaboo, open a command line tool and navigate to the folder F and type the below formula:<br><br>
 
